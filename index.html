@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/410d865736.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/portfolio_logo.png" class="logo">
+                <ul id="sidemenu" class="navbar">
+                    <li><a href="#header" style="--i:1">Home</a></li>
+                    <li><a href="#about" style="--i:2">About</a></li>
+                    <li><a href="#services" style="--i:3">Services</a></li>
+                    <li><a href="#portfolio" style="--i:4">Portfolio</a></li>
+                    <li><a href="#contact" style="--i:5">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <h3>Hello, It's me</h3>
+                    <h1>Shiju<span> J</span></h1>
+                    <h3>And I'm a <span class="text">Full Stack Developer</span></h3>
+                    <p>I'm a web developer with a passion for creating modern and responsive websites</p>
+                    <div class="social-icon">
+                        <a href="https://github.com/Shiju1212" target="_blank" style="--i:6"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/shiju_sju/" target="_blank" style="--i:7"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shiju-j/" target="_blank" style="--i:8"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="profile-img">
+                    <img src="/image/profile.png" alt="my profile">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/profile - Copy.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About<span> Me</span></h1>
+                    <p>
+                        I’m Shiju J, a Full Stack Developer with experience in Python, Django, React, JavaScript, HTML, CSS, and Bootstrap. 
+                        I specialize in building clean, responsive, and high-performance web applications that feel simple and smooth for users.
+                    </p>
+
+                    <p>
+                        I’ve developed real-world projects like an OTT platform, a Medicine Management System, and a Water Tracker App. 
+                        These projects helped me gain strong practical experience in full-stack development, UI/UX flow, and real product structure.
+                    </p>
+
+                    <p>
+                        I’m currently focused on freelancing, where I help businesses, startups, and individuals bring their ideas to life through 
+                        modern websites and web applications. I believe in delivering quality work, clear communication, and long-term value in every project.
+                    </p>
+            
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="skills-list">
+                            <li>
+                                <span class="dropdown-title">
+                                    Frontend
+                                    <span class="arrow">➼</span>
+                                </span>
+                                <ul class="dropdown-content">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="dropdown-title">
+                                    Backend
+                                    <span class="arrow">➼</span>
+                                </span>
+                                <ul class="dropdown-content">
+                                    <li>Python</li>
+                                    <li>Django</li>
+                                    <li>REST API</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="dropdown-title">
+                                    Database
+                                    <span class="arrow">➼</span>
+                                </span>
+                                <ul class="dropdown-content">
+                                    <li>MySQL</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="dropdown-title">
+                                    Tools
+                                    <span class="arrow">➼</span>
+                                </span>
+                                <ul class="dropdown-content">
+                                    <li>Git & GitHub</li>
+                                    <li>VS Code</li>
+                                    <li>Postman</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Full Stack Development Training at Mashupstack</li>
+                            <li><span>2021</span><br>B.Com from Nanjil Catholic College Kanyakumari</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        I build responsive, fast and user-friendly websites
+                        with clean UI and secure backend architecture.
+                    </p>
+                    <a href="#" class="open-modal" data-modal="webModal">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Frontend Development</h2>
+                    <p>
+                        I create modern, responsive user interfaces with React, 
+                        JavaScript and clean design systems.
+                    </p>
+                    <a href="#" class="open-modal" data-modal="frontModal">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Development</h2>
+                    <p>
+                        I develop secure, scalable backend sysytems with Python, Django and REST APIs.
+                    </p>
+                    <a href="#" class="open-modal" data-modal="backModal">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Work</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/flixit.jpeg" alt="flixit">
+                    <div class="layer">
+                        <h3>Flixit - OTT Platform</h3>
+                        <p>
+                            An OTT platform built with Django and React, 
+                            featuring user authentication, video streaming, 
+                            and admin management.
+                        </p>
+                        <a href="https://github.com/Shiju1212/ott-platform" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/water_tracker.jpg" alt="water_tracker">
+                    <div class="layer">
+                        <h3>Water Tracker</h3>
+                        <p>
+                            A web app to track daily water intake, 
+                            built with Django and Bootstrap, 
+                            featuring user profiles and reminders.
+                        </p>
+                        <a href="https://github.com/Shiju1212/water_tracker" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/medicine.jpeg" alt="medicine_management">
+                    <div class="layer">
+                        <h3>Medicine Management System</h3>
+                        <p>
+                            A pharmacy management tool for tracking medicines and inventory.
+                        </p>
+                        <a href="https://github.com/Shiju1212/Medicine-site" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/" class="btn" target="_blank">See more</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p class="cont">
+                        <a href="mailto:shijujs1212@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i>shijujs1212@gmail.com</a>
+                    </p>
+                    <p class="cont">
+                        <a href="tel:+919384756289"><i class="fas fa-phone-square"></i>+91 9384756289</a>
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Shiju1212" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/shiju_sju/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shiju-j/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="top">↑</a>
+
+    <div class="modal" id="webModal">
+        <div class="modal-content slide-up">
+            <span class="close">&times;</span>
+            <h2><i class="fa-solid fa-code"></i> Web Development</h2>
+            <P>
+                I develop full-stack web applications using Python, Django, React, JavaScript, HTML, CSS, and Bootstrap.
+                My focus is delivering clean UI, strong security, fast loading speed, and professional design.
+            </P>
+            <p><strong>I can build websites like:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-globe"></i> Business Websites</li>
+                <li><i class="fa-solid fa-user-tie"></i> Portfolios</li>
+                <li><i class="fa-solid fa-table-columns"></i> Dashboards & Admin Panels</li>
+                <li><i class="fa-solid fa-sitemap"></i> Custom web Apps</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="frontModal">
+        <div class="modal-content slide-up">
+            <span class="close">&times;</span>
+            <h2><i class="fa-solid fa-palette"></i> Frontend Development</h2>
+            <p>
+                I build visually appealing, responsive, and user-friendly interfaces using React, 
+                JavaScript, HTML, CSS, and Bootstrap.
+            </p>
+            <p><strong>I focus on:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-mobile"></i> Responsive UI</li>
+                <li><i class="fa-solid fa-wand-magic-sparkles"></i> Clean UX Design</li>
+                <li><i class="fa-solid fa-layer-group"></i> Modern Components</li>
+                <li><i class="fa-solid fa-gauge-simple-high"></i> Optimized Performance</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="backModal">
+        <div class="modal-content slide-up">
+            <span class="close">&times;</span>
+            <h2><i class="fa-solid fa-server"></i> Backend Development</h2>
+            <p>
+                I create secure and scalable backend systems with Python, Django, and REST API development. 
+                I ensure smooth data flow, performance, authentication, and database management.
+            </p>
+            <p><strong>I work with:</strong></p>
+            <ul>
+                <li><i class="fa-solid fa-database"></i> Database Models</li>
+                <li><i class="fa-solid fa-shield-halved"></i> Authentication Systems</li>
+                <li><i class="fa-solid fa-link"></i> REST APIs Development</li>
+                <li><i class="fa-solid fa-gears"></i> Performance Optimization</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        const titles = document.querySelectorAll('.dropdown-title');
+
+        titles.forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+
+                title.classList.toggle('open');
+            });
+        });
+    </script>
+
+    <script>
+        const openButtons = document.querySelectorAll('.open-modal');
+        const modals = document.querySelectorAll('.modal');
+        const closes = document.querySelectorAll('.close');
+
+        openButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const modalId = button.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+
+                modal.style.display = 'flex';
+                setTimeout(() => modal.classList.add('show'), 10);
+            });
+        });
+
+        closes.forEach(close => {
+            close.addEventListener('click', () => {
+                const modal = close.closest('.modal');
+                modal.classList.remove('show');
+                setTimeout(() => modal.style.display = 'none', 300);
+            });
+        });
+
+        window.addEventListener('click', (e) => {
+            modals.forEach(modal => {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                    setTimeout(() => modal.style.display = 'none', 300);
+                }
+            });
+        });
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwdL3a8m5ZpCTlFjg2_utji_0AvaqTnzab7KmsAocAGfMR42wxv-jI32rMj5iRlM4nsTw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("message")
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+
+        message.style.color = "#ff004f";
+        message.innerHTML = "Sending..."
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                message.style.color = "#ff004f";
+                message.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
